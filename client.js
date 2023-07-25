@@ -1,4 +1,4 @@
-const { event } = require("jquery");
+// const { event } = require("jquery");
 
 console.log('salary calculator'); 
 
@@ -29,6 +29,10 @@ function submitForm(event){
         </tr>
     `;
 
+}
+
+function removeRow(event){
+    event.target.closest('tr').remove(); 
 }
 
 
